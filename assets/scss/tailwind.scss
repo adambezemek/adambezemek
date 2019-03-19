@@ -36,6 +36,42 @@
  * @import "components/forms";
  */
 
+::-moz-selection { background: #e8c051; }
+::selection { background: #e8c051; }
+body {
+  @apply font-serif;
+  @apply font-light;
+  @apply text-grey-darkest;
+}
+h1, h2 {
+  @apply font-sans;
+  @apply font-bold;
+}
+h1 {
+  font-size: 64px;
+  @screen md {
+    font-size: 128px;
+  }
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  @screen md {
+    font-size: 64px;
+  }
+}
+p {
+  @apply leading-loose;
+  @apply text-left;
+  @screen md {
+    @apply text-center;
+  }
+}
+@import "vars";
+@import "links";
+@import "profile";
+
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

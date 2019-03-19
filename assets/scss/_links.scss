@@ -1,0 +1,14 @@
+
+a {
+  color: $brand;
+  background: linear-gradient(to bottom, $white 0%, $brand 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  text-decoration: none;
+  transition: all .5s;
+
+  &:hover {
+    color: $brand-darker;
+  }
+}
