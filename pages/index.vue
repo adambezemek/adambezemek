@@ -47,8 +47,10 @@
             I have developed a passion for speaking at events about the
             importance of Design Systems.
           </p>
-          <h3 class="text-left font-sans max-w-md mx-auto">Past Events:</h3>
-          <ul class="text-left font-sans max-w-md mx-auto list-reset">
+          <h3 class="text-left font-sans max-w-md mx-auto pl-2 mb-2">
+            Past Events:
+          </h3>
+          <ul class="text-left font-sans max-w-md mx-auto leading-normal">
             <li>Chippewa Valley Developers Group</li>
             <li>Open Source North</li>
             <li>JavaScript MN Meetup</li>

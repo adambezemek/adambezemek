@@ -48,8 +48,11 @@ h1, h2 {
   @apply font-bold;
 }
 h1 {
-  font-size: 64px;
-  @screen md {
+  font-size: 58px;
+  @screen sm {
+    font-size: 64px;
+  }
+  @screen lg {
     font-size: 128px;
   }
 }
