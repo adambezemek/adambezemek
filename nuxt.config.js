@@ -27,7 +27,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: pkg.description
+        content: 'Adam Bezemek is an accomplished Director of Technology that specializes in empowering his teams to create better quality, easily maintained, and scalable user interface applications.'
       }
     ],
     link: [{

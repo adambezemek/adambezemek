@@ -1,5 +1,5 @@
 <template>
-  <div class="p-1 sm:p-3 md:p-10 lg:p-16 text-md lg:text-xl">
+  <div class="p-1 sm:p-3 md:p-10 lg:p-16 text-md lg:text-xl main">
     <!-- insert global navigation -->
     <Nav />
     <div class="p-6">

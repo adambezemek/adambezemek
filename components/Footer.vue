@@ -17,7 +17,8 @@
       &amp;
       <a class="no-underline" href="https://tailwindcss.com" target="_blank"
         >Tailwind CSS</a
-      >, and is hosted on
+      >
+      and is hosted on
       <a class="no-underline" href="https://www.netlify.com" target="_blank"
         >Netlify.</a
       >

@@ -54,7 +54,7 @@
             <li>Chippewa Valley Developers Group</li>
             <li>Open Source North</li>
             <li>JavaScript MN Meetup</li>
-            <li>Minnebar Mineapolis</li>
+            <li>Minnebar Minneapolis</li>
             <li>AngularMN Meetup</li>
           </ul>
         </div>
