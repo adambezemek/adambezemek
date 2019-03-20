@@ -1,4 +1,13 @@
 import pkg from './package'
+import path from 'path'
+import PurgecssPlugin from 'purgecss-webpack-plugin'
+import glob from 'glob-all'
+
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:/]+/g) || []
+  }
+}
 
 export default {
   mode: 'spa',
@@ -58,6 +67,15 @@ export default {
    ** Build configuration
    */
   build: {
+    extractCSS: true,
+    postcss: {
+      plugins: {
+        tailwindcss: path.resolve('./tailwind.js')
+      },
+      preset: { autoprefixer: { grid: true } }
+    },
+
+
     /*
      ** You can extend webpack config here
      */
@@ -74,6 +92,28 @@ export default {
           }
         })
       }
+      if (ctx.isDev) {
+        config.plugins.push(
+          new PurgecssPlugin({
+            // purgecss configuration
+            // https://github.com/FullHuman/purgecss
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue'),
+              path.join(__dirname, './assets/**/*.scss')
+            ]),
+            extractors: [
+              {
+                extractor: TailwindExtractor,
+                extensions: ['vue', 'scss']
+              }
+            ],
+            whitelist: ['html', 'body', 'nuxt-progress']
+          })
+        )
+      }
+
     }
   }
 }
