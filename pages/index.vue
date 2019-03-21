@@ -44,7 +44,7 @@
         <div id="speaker">
           <h2 class="lowercase">I Like Talking.</h2>
           <p class="text-justify max-w-md mx-auto mb-5">
-            I have developed a passion for speaking at events about the
+            Sometimes you can find Adam speaking at events about the
             importance of Design Systems.
           </p>
           <h3 class="text-left font-sans max-w-md mx-auto pl-2 mb-2">
