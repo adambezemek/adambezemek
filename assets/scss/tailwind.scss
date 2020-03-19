@@ -36,8 +36,10 @@
  * @import "components/forms";
  */
 
-::-moz-selection { background: #e8c051; }
-::selection { background: #e8c051; }
+ @import "./vars";
+
+::-moz-selection { background: $brand-darker; }
+::selection { background: $brand-darker; }
 body {
   @apply font-serif;
   @apply font-light;
@@ -46,6 +48,7 @@ body {
 h1, h2 {
   @apply font-sans;
   @apply font-bold;
+  color: $brand;
 }
 h1 {
   font-size: 58px;
@@ -73,7 +76,6 @@ p {
 .main {
   scroll-behavior: smooth;
 }
-@import "vars";
 @import "links";
 @import "profile";
 

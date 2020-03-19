@@ -44,8 +44,8 @@
         <div id="speaker">
           <h2 class="lowercase">I Like Talking.</h2>
           <p class="text-justify max-w-md mx-auto mb-5">
-            Sometimes you can find Adam speaking at events about the
-            importance of Design Systems.
+            Sometimes you can find Adam speaking at events about the importance
+            of Design Systems.
           </p>
           <h3 class="text-left font-sans max-w-md mx-auto pl-2 mb-2">
             Past Events:
@@ -67,8 +67,10 @@
 import Profile from '~/components/Profile.vue'
 
 export default {
-  head: {
-    title: 'adam bezemek'
+  head: function() {
+    return {
+      title: 'adam bezemek'
+    }
   },
   components: {
     Profile
